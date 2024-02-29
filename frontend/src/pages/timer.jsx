@@ -1,13 +1,23 @@
-import React from 'react';
-import '/src/style/timer/timer.css'
+import React, { useState, useEffect } from 'react';
 
 function Tick() {
-    return (
-        <div>
-            <h1>Hello, i'm Jullia!</h1>
-            <h2>It is {new Date().toLocaleTimeString()}.</h2>
-        </div>
-    )
+  const [currentTime, setCurrentTime] = useState(new Date());
+
+  useEffect(() => {
+    const timerID = setInterval(() => {
+      setCurrentTime(new Date());
+    }, 1000);
+
+    return () => {
+      clearInterval(timerID);
+    };
+  }, []);
+
+  return (
+    <div>
+      <h2>It is {currentTime.toLocaleTimeString()}.</h2>
+    </div>
+  );
 }
 
 export default Tick;
