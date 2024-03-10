@@ -15,5 +15,5 @@
     "editor.renderLineHighlight": "gutter",
     "editor.fontLigatures": true,
     "workbench.editor.labelFormat": "short",
-    
+    "editor.minimap.enabled": false
 }
