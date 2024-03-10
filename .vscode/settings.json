@@ -1,0 +1,19 @@
+{
+    "explorer.compactFolders": false,
+    "editor.tabSize": 2,
+    "task.saveBeforeRun": "always",
+    "editor.formatOnSave": true,
+    "editor.insertSpaces": true,
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 80,
+    "editor.codeActionsOnSave": {
+        "source.fixAll": "explicit"
+    },
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "debug.javascript.autoAttachFilter": "onlyWithFlag",
+    "editor.lineHeight": 1.70,
+    "editor.renderLineHighlight": "gutter",
+    "editor.fontLigatures": true,
+    "workbench.editor.labelFormat": "short",
+    
+}

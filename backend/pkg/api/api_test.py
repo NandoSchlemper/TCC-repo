@@ -5,8 +5,6 @@ import requests, json
 app = Flask(__name__)
 CORS(app)
 
-
-
 @app.route('/')
 def home():
     return 'Hello, World!'
@@ -19,6 +17,8 @@ def get_pokemon(name):
         return jsonify(response.json())
     else:
         return jsonify({"Error": "Pokemon not found"}), 404
-    
+
+
 if __name__ == '__main__':
     app.run(debug=True)
+    
