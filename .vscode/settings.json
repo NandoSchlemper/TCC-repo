@@ -20,6 +20,7 @@
         "aferida",
         "atendimento",
         "causadas",
+        "cipatology",
         "citopatológico",
         "coleta",
         "consulta",
@@ -64,5 +65,10 @@
         "Tétano",
         "tipo",
         "vacinadas"
+    ],
+    "cSpell.ignoreWords": [
+        "VARCHAR",
+        "diabete",
+        "glycated"
     ]
 }
