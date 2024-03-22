@@ -47,6 +47,7 @@ person (
   person_ID INT AUTO_INCREMENT NOT NULL,
   man_ID VARCHAR(11),
   woman_ID VARCHAR(11),
+  child_ID VARCHAR(11),
   hypertension INT NOT NULL,
   consultation INT NOT NULL,
   blood_pressure_measurement INT NOT NULL,
@@ -55,5 +56,6 @@ person (
   glycated_haemoglobin INT NOT NULL,
   PRIMARY KEY(person_ID),
   FOREIGN KEY(man_ID) REFERENCES man(cpf),
-  FOREIGN KEY(woman_ID) REFERENCES woman(cpf)
+  FOREIGN KEY(woman_ID) REFERENCES woman(cpf),
+  FOREIGN KEY(child_ID) REFERENCES child(cpf)
 );
